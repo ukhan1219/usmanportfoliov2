@@ -1,107 +1,140 @@
 // CREUnderwriting.tsx
 
-import React from 'react';
+import React from "react";
 
 export default function CREUnderwriting() {
   return (
     <div className="md:text-center px-6 md:px-20 text-left mb-12 md:mb-24 py-24 lg:py-48">
-      {/* Use a narrower container for the text on larger screens */}
       <div className="content md:w-1/3 mx-auto mb-8">
-
-        {/* Title */}
         <h1 className="text-left text-3xl font-medium md:text-7xl mb-4">
-          CREUnderwriting
+          <a href="https://github.com/ukhan1219/CREUnderwriting">
+            CREUnderwriting{">"}
+          </a>
         </h1>
 
-        {/* "Updated" line (optional) */}
         <p className="text-left mb-8 text-sm font-extralight">
           <strong>Updated:</strong> July 6, 2024
         </p>
 
-        {/* Intro Paragraph */}
         <p className="text-left text-3xl font-medium md:break-words mb-2">
-          Java-based tool designed to assist Commercial Real Estate (CRE) investors
+          Java-based tool designed to assist Commercial Real Estate (CRE)
+          investors
         </p>
         <p className="text-left md:break-words mb-12 font-light">
-          CREUnderwriting is a Java-based tool designed to assist Commercial Real Estate (CRE) investors
-          in evaluating and underwriting potential property investments. By automating the calculations
-          traditionally performed manually or mentally by CRE professionals, this project aims to reduce
-          errors and streamline the decision-making process.
+          CREUnderwriting is a Java-based tool designed to assist Commercial
+          Real Estate (CRE) investors in evaluating and underwriting potential
+          property investments. By automating the calculations traditionally
+          performed manually or mentally by CRE professionals, this project aims
+          to reduce errors and streamline the decision-making process.
         </p>
 
-        {/* Project Overview */}
-        <h2 className="text-left text-2xl font-medium mb-2">Project Overview</h2>
+        <h2 className="text-left text-2xl font-medium mb-2">
+          Project Overview
+        </h2>
         <p className="text-left mb-4 font-light">
-          CREUnderwriting utilizes Object-Oriented Programming (OOP) principles to create a comprehensive
-          underwriter that processes key property data typically provided by brokers or Multiple Listing
-          Services (MLS). This data includes:
+          CREUnderwriting utilizes Object-Oriented Programming (OOP) principles
+          to create a comprehensive underwriter that processes key property data
+          typically provided by brokers or Multiple Listing Services (MLS). This
+          data includes:
         </p>
         <ul className="list-disc text-left ml-8 mb-8 font-light">
-          <li><strong>Asking Price</strong></li>
-          <li><strong>Rent</strong></li>
-          <li><strong>Asset Class</strong></li>
-          <li><strong>Location Class</strong></li>
-          <li><strong>Units</strong></li>
-          <li><strong>Vacancy</strong></li>
-          <li><strong>Average Rental of Units</strong></li>
-          <li><strong>Expenses</strong></li>
-          <li><strong>Capitalization Rate</strong></li>
+          <li>
+            <strong>Asking Price</strong>
+          </li>
+          <li>
+            <strong>Rent</strong>
+          </li>
+          <li>
+            <strong>Asset Class</strong>
+          </li>
+          <li>
+            <strong>Location Class</strong>
+          </li>
+          <li>
+            <strong>Units</strong>
+          </li>
+          <li>
+            <strong>Vacancy</strong>
+          </li>
+          <li>
+            <strong>Average Rental of Units</strong>
+          </li>
+          <li>
+            <strong>Expenses</strong>
+          </li>
+          <li>
+            <strong>Capitalization Rate</strong>
+          </li>
         </ul>
 
-        {/* How It Works */}
         <h3 className="text-left text-xl font-medium mb-2">How It Works</h3>
         <ol className="list-decimal text-left ml-8 mb-8 font-light">
           <li>
-            <strong>Data Input</strong>: The user inputs the relevant property data,
-            which is then stored in a list for evaluation.
+            <strong>Data Input</strong>: The user inputs the relevant property
+            data, which is then stored in a list for evaluation.
           </li>
           <li>
-            <strong>Evaluation and Underwriting</strong>: The tool processes this
-            information using proprietary calculations commonly used by CRE investors
-            to determine the viability of a deal.
+            <strong>Evaluation and Underwriting</strong>: The tool processes
+            this information using proprietary calculations commonly used by CRE
+            investors to determine the viability of a deal.
           </li>
           <li>
-            <strong>Results</strong>: The program returns key metrics, including:
+            <strong>Results</strong>: The program returns key metrics,
+            including:
             <ul className="list-disc ml-8 mt-2">
-              <li><strong>Debt Service Coverage Ratio (DSCR)</strong>: Indicates the property&#39;s ability to cover its debt obligations.</li>
-              <li><strong>Net Operating Income (NOI)</strong>: The income generated by the property after operating expenses.</li>
-              <li><strong>Expected Value</strong>: An estimate of the property&#39;s value based on the input data.</li>
+              <li>
+                <strong>Debt Service Coverage Ratio (DSCR)</strong>: Indicates
+                the property&#39;s ability to cover its debt obligations.
+              </li>
+              <li>
+                <strong>Net Operating Income (NOI)</strong>: The income
+                generated by the property after operating expenses.
+              </li>
+              <li>
+                <strong>Expected Value</strong>: An estimate of the
+                property&#39;s value based on the input data.
+              </li>
             </ul>
           </li>
         </ol>
 
-        {/* Why This Project */}
-        <h3 className="text-left text-xl font-medium mb-2">Why This Project?</h3>
+        <h3 className="text-left text-xl font-medium mb-2">
+          Why This Project?
+        </h3>
         <p className="text-left mb-8 font-light">
-          In the CRE industry, professionals often rely on quick mental calculations or manual methods to
-          evaluate deals, which can lead to errors. CREUnderwriting automates this process, ensuring more
-          accurate and reliable assessments, ultimately helping investors make better-informed decisions.
+          In the CRE industry, professionals often rely on quick mental
+          calculations or manual methods to evaluate deals, which can lead to
+          errors. CREUnderwriting automates this process, ensuring more accurate
+          and reliable assessments, ultimately helping investors make
+          better-informed decisions.
         </p>
 
-        {/* Getting Started */}
         <h3 className="text-left text-xl font-medium mb-2">Getting Started</h3>
         <ol className="list-decimal text-left ml-8 mb-8 font-light">
           <li>Clone this repository.</li>
           <li>Compile the Java project in your preferred IDE.</li>
-          <li>Run the application and input the property details as prompted.</li>
-          <li>Receive an evaluation of the deal&#39;s viability based on the DSCR, NOI, and Expected Value.</li>
+          <li>
+            Run the application and input the property details as prompted.
+          </li>
+          <li>
+            Receive an evaluation of the deal&#39;s viability based on the DSCR,
+            NOI, and Expected Value.
+          </li>
         </ol>
 
-        {/* Prerequisites */}
         <h3 className="text-left text-xl font-medium mb-2">Prerequisites</h3>
         <ul className="list-disc text-left ml-8 mb-8 font-light">
           <li>Java Development Kit (JDK)</li>
           <li>A Java IDE such as IntelliJ IDEA, Eclipse, or NetBeans</li>
         </ul>
 
-        {/* Contributing */}
         <h3 className="text-left text-xl font-medium mb-2">Contributing</h3>
         <p className="text-left mb-8 font-light">
-          Contributions to enhance the functionality of CREUnderwriting are welcome. If you have suggestions
-          for improving the evaluation algorithms or expanding the tool&#39;s capabilities, feel free to reach
-          out for improvements and advancements.
+          Contributions to enhance the functionality of CREUnderwriting are
+          welcome. If you have suggestions for improving the evaluation
+          algorithms or expanding the tool&#39;s capabilities, feel free to
+          reach out for improvements and advancements.
         </p>
-
       </div>
     </div>
   );

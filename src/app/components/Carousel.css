@@ -1,72 +1,40 @@
-/* The main carousel container */
 .carousel {
     margin: 0;
     padding: 20px 0;
     overflow: hidden;
     display: flex;
-    /* 
-      If you want to see the full row across the screen, 
-      you can remove max-width or adjust it as needed.
-    */
-  }
-  
-  /* A 'group' of icons, side-by-side */
-  .group {
+}
+
+.group {
     display: flex;
     gap: 20px;
-    /* 
-      This extra padding on the right ensures we have a gap
-      between the last icon in group1 and the first icon in group2
-      when they loop around. 
-    */
     padding-right: 20px;
-  
-    /* 
-      Key to CSS-based animation: 
-      We'll transform each group from 0% to -100% so it slides off screen.
-    */
     will-change: transform;
-    animation: scrolling 30s linear infinite; 
-    /* 
-      Adjust the duration (15s) to your liking. 
-      A higher value => slower scroll.
-    */
-  }
-  
-  /* The actual cards holding each skill icon */
-  .card {
+    animation: scrolling 30s linear infinite;
+}
+
+.card {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* 
-      You can tweak width/height or remove them, 
-      letting the image size drive the layout 
-    */
-    min-width: 80px;  
+    min-width: 80px;
     min-height: 80px;
-  }
-  
-  /* The skill icon images themselves */
-  .card img {
+}
+
+.card img {
     width: 60px;
     height: 60px;
-  }
-  
-  /* Keyframes for scrolling */
-  @keyframes scrolling {
+}
+
+@keyframes scrolling {
     0% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
     100% {
-      /* Move left by 100% of the container’s width
-         so that the first group is fully offscreen 
-         while the second group takes its place */
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
-  }
-  
-  /* Pause the scrolling animation on hover */
-  .carousel:hover .group {
+}
+
+.carousel:hover .group {
     animation-play-state: paused;
-  }
-  
+}

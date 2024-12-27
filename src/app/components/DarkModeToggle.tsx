@@ -1,25 +1,35 @@
 "use client";
-
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import DarkMode from "../../../public/dark_mode_24dp_0C0C0C_FILL0_wght400_GRAD0_opsz24.png";
 import LightMode from "../../../public/light_mode_24dp_F5F5F5_FILL0_wght400_GRAD0_opsz24.png";
 
 export default function DarkModeToggle() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState<"dark" | "light">("light");
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") || "light";
-    document.documentElement.classList.add(savedTheme);
-    setTheme(savedTheme);
+    const storedTheme = localStorage.getItem("theme") as
+      | "dark"
+      | "light"
+      | null;
+    if (storedTheme === "dark" || storedTheme === "light") {
+      setTheme(storedTheme);
+    } else {
+    }
   }, []);
 
+  useEffect(() => {
+    document.documentElement.classList.remove(
+      theme === "dark" ? "light" : "dark",
+    );
+
+    document.documentElement.classList.add(theme);
+
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
   const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    document.documentElement.classList.remove(theme);
-    document.documentElement.classList.add(newTheme);
-    localStorage.setItem("theme", newTheme);
-    setTheme(newTheme);
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
   };
 
   return (

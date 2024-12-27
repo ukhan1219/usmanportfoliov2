@@ -122,34 +122,55 @@
 //   );
 // }
 
-
-"use client"; 
+"use client";
 import React from "react";
 import "./Carousel.css";
 
-// We'll define our icons array here, or you could pass it as props
 const programming = [
-  "c", "python", "ocaml", "java", "javascript", "typescript",
-  "html", "css", "php", "graphql", "r", "mysql", "sqlite",
+  "c",
+  "python",
+  "ocaml",
+  "java",
+  "javascript",
+  "typescript",
+  "html",
+  "css",
+  "php",
+  "graphql",
+  "r",
+  "mysql",
+  "sqlite",
 ];
 
 const frameworks = [
-  "tensorflow", "pytorch", "sklearn", "tailwind", "nodejs",
-  "react", "nextjs", "prisma",
+  "tensorflow",
+  "pytorch",
+  "sklearn",
+  "tailwind",
+  "nodejs",
+  "react",
+  "nextjs",
+  "prisma",
 ];
 
 const tools = [
-  "git", "github", "figma", "linux", "kali",
-  "aws", "gcp", "docker", "vercel", "vscode",
+  "git",
+  "github",
+  "figma",
+  "linux",
+  "kali",
+  "aws",
+  "gcp",
+  "docker",
+  "vercel",
+  "vscode",
 ];
 
 export default function SkillsMarquee() {
-  // Combine all skills into one array for simplicity
   const allSkills = [...programming, ...frameworks, ...tools];
 
   return (
     <div className="carousel">
-      {/* First group of skill icons */}
       <div className="group">
         {allSkills.map((icon, index) => (
           <div className="card" key={`${icon}-${index}`}>
@@ -161,7 +182,6 @@ export default function SkillsMarquee() {
         ))}
       </div>
 
-      {/* Second group (duplicate) for the infinite loop effect */}
       <div className="group" aria-hidden>
         {allSkills.map((icon, index) => (
           <div className="card" key={`${icon}-duplicate-${index}`}>

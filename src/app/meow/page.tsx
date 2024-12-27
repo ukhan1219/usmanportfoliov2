@@ -1,34 +1,31 @@
 // meowBot.tsx
-import React from 'react';
+import React from "react";
 
 export default function MeowBot() {
   return (
     <div className="md:text-center px-6 md:px-20 text-left mb-12 md:mb-24 py-24 lg:py-48">
-      {/* Container for main content (centered on larger screens) */}
       <div className="content md:w-1/3 mx-auto mb-8">
-        {/* Title */}
         <h1 className="text-left text-3xl font-medium md:text-7xl mb-4">
-          meowBot
+          <a href="https://github.com/ukhan1219/meowbot">meowBot{">"}</a>
         </h1>
-        {/* Date or “last updated” info */}
         <p className="text-left mb-8 text-sm font-extralight">
           <strong>Updated:</strong> February 10, 2024
         </p>
 
-        {/* Intro Paragraph */}
         <p className="text-left text-3xl font-medium md:break-words mb-2">
           A Discord bot designed to bring fun and interaction to any server
         </p>
         <p className="text-left md:break-words mb-12 font-light">
-          meowBot is a Discord bot designed to bring a bit of fun and interaction
-          to any server. Hosted on Google Cloud Platform and using SQLite for
-          database management, this bot simulates a virtual cat that responds to
-          various triggers and allows users to interact with it through a
-          petting feature.
+          meowBot is a Discord bot designed to bring a bit of fun and
+          interaction to any server. Hosted on Google Cloud Platform and using
+          SQLite for database management, this bot simulates a virtual cat that
+          responds to various triggers and allows users to interact with it
+          through a petting feature.
         </p>
 
-        {/* Project Overview */}
-        <h2 className="text-left text-2xl font-medium mb-2">Project Overview</h2>
+        <h2 className="text-left text-2xl font-medium mb-2">
+          Project Overview
+        </h2>
         <p className="text-left mb-4 font-light">
           meowBot offers a range of functionalities:
         </p>
@@ -53,12 +50,11 @@ export default function MeowBot() {
           </li>
         </ul>
 
-        {/* Key Features */}
         <h3 className="text-left text-xl font-medium mb-2">Key Features</h3>
         <ul className="list-disc text-left ml-8 mb-8 font-light">
           <li>
-            <strong>Random Responses</strong>: The bot generates random responses
-            to cat-related triggers like “meow,” “mrow,” and “:3”.
+            <strong>Random Responses</strong>: The bot generates random
+            responses to cat-related triggers like “meow,” “mrow,” and “:3”.
           </li>
           <li>
             <strong>Petting Mechanism</strong>: Each pet command returns a
@@ -74,7 +70,6 @@ export default function MeowBot() {
           </li>
         </ul>
 
-        {/* How It Works */}
         <h3 className="text-left text-xl font-medium mb-2">How It Works</h3>
         <ol className="list-decimal text-left ml-8 mb-8 font-light">
           <li>
@@ -86,8 +81,8 @@ export default function MeowBot() {
             <strong>Message Handling:</strong> Responds to commands:
             <ul className="list-disc ml-8 mt-1">
               <li>
-                <code>!pet</code> – Allows users to pet the cat and updates their
-                pet count.
+                <code>!pet</code> – Allows users to pet the cat and updates
+                their pet count.
               </li>
               <li>
                 <code>!petleaderboard</code> – Shows the top users with the most
@@ -105,7 +100,6 @@ export default function MeowBot() {
           </li>
         </ol>
 
-        {/* Code Explanation */}
         <h3 className="text-left text-xl font-medium mb-2">Code Explanation</h3>
         <ul className="list-disc text-left ml-8 mb-8 font-light">
           <li>
@@ -123,13 +117,12 @@ export default function MeowBot() {
           </li>
         </ul>
 
-        {/* Getting Started */}
         <h3 className="text-left text-xl font-medium mb-2">Getting Started</h3>
         <ol className="list-decimal text-left ml-8 mb-8 font-light">
           <li>Clone this repository.</li>
           <li>
-            Set up a Google Cloud Platform project and configure your environment
-            to run the bot.
+            Set up a Google Cloud Platform project and configure your
+            environment to run the bot.
           </li>
           <li>
             Install required Python libraries:
@@ -149,7 +142,6 @@ export default function MeowBot() {
           </li>
         </ol>
 
-        {/* Prerequisites */}
         <h3 className="text-left text-xl font-medium mb-2">Prerequisites</h3>
         <ul className="list-disc text-left ml-8 mb-8 font-light">
           <li>Python 3.x</li>
@@ -157,7 +149,6 @@ export default function MeowBot() {
           <li>Google Cloud Platform account for hosting</li>
         </ul>
 
-        {/* Contributing */}
         <h3 className="text-left text-xl font-medium mb-2">Contributing</h3>
         <p className="text-left mb-8 font-light">
           Contributions to improve meowBot are welcome! Feel free to reach out

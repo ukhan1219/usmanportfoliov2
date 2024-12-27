@@ -1,21 +1,18 @@
 // stockbot.tsx
 
-import React from 'react';
+import React from "react";
 
 export default function StockBot() {
   return (
     <div className="md:text-center px-6 md:px-20 text-left mb-12 md:mb-24 py-24 lg:py-48">
-      {/* Main content container (narrower on large screens) */}
       <div className="content md:w-1/3 mx-auto mb-8">
-        {/* Title */}
         <h1 className="text-left text-3xl font-medium md:text-7xl mb-4">
-          StockBot
+          <a href="https://github.com/ukhan1219/stockbot">StockBot{">"}</a>
         </h1>
         <p className="text-left mb-8 text-sm font-extralight">
           <strong>Updated:</strong> May 11, 2024
         </p>
 
-        {/* Intro Paragraph */}
         <p className="text-left text-3xl font-medium md:break-words mb-2">
           A robust, adaptable tool for analyzing and predicting market movements
         </p>
@@ -27,8 +24,9 @@ export default function StockBot() {
           historical data for various commodities across multiple time frames.
         </p>
 
-        {/* Project Overview */}
-        <h2 className="text-left text-2xl font-medium mb-2">Project Overview</h2>
+        <h2 className="text-left text-2xl font-medium mb-2">
+          Project Overview
+        </h2>
         <p className="text-left mb-4 font-light">
           As part of my ongoing learning journey, I am exploring and testing
           various machine learning and AI techniques to identify the best
@@ -51,7 +49,6 @@ export default function StockBot() {
           models and sampling techniques to optimize the bot’s performance.
         </p>
 
-        {/* APIs Used */}
         <h3 className="text-left text-xl font-medium mb-2">APIs Used</h3>
         <ul className="list-disc text-left ml-8 mb-8 font-light">
           <li>
@@ -65,8 +62,9 @@ export default function StockBot() {
           </li>
         </ul>
 
-        {/* Webhook Integration */}
-        <h3 className="text-left text-xl font-medium mb-2">Webhook Integration</h3>
+        <h3 className="text-left text-xl font-medium mb-2">
+          Webhook Integration
+        </h3>
         <p className="text-left mb-8 font-light">
           This project includes two webhook scripts designed to work with a
           sister script on TradingView’s platform. The scripts send alerts for
@@ -74,8 +72,9 @@ export default function StockBot() {
           for real-time, actionable insights based on StockBot’s data analysis.
         </p>
 
-        {/* Learning and Development */}
-        <h3 className="text-left text-xl font-medium mb-2">Learning and Development</h3>
+        <h3 className="text-left text-xl font-medium mb-2">
+          Learning and Development
+        </h3>
         <p className="text-left mb-12 font-light">
           Please note that StockBot is a work in progress. I am continually
           learning new machine learning models, sampling techniques, and AI
@@ -83,16 +82,16 @@ export default function StockBot() {
           codebase.
         </p>
 
-        {/* Getting Started */}
         <h2 className="text-left text-2xl font-medium mb-2">Getting Started</h2>
         <ol className="list-decimal text-left ml-8 mb-8 font-light">
           <li>Clone this repository.</li>
           <li>Set up API keys for TradingView and yfinance.</li>
-          <li>Run the provided scripts to start data retrieval and analysis.</li>
+          <li>
+            Run the provided scripts to start data retrieval and analysis.
+          </li>
           <li>Monitor output and webhook alerts for buy/sell signals.</li>
         </ol>
 
-        {/* Contributing */}
         <h2 className="text-left text-2xl font-medium mb-2">Contributing</h2>
         <p className="text-left mb-8 font-light">
           Since this project is part of my learning process, I am open to
