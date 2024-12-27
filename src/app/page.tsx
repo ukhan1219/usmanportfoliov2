@@ -1,101 +1,140 @@
-import Image from "next/image";
-
+import Carousel from "./components/Carousel"
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="px-6 md:px-24 text-left mt-8 mb-16 md:mb-36 py-28 lg:py-48 h-[calc(100vh-11rem)]">
+      {/* Name Section */}
+      <h1 className="text-2xl md:text-4xl font-regular mb-4 md:mb-12 lg:px-1">
+        Usman Khan
+      </h1>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* One-Liner Section */}
+      <h2 className="text-3xl font-medium md:text-7xl break-words mb-6 md:mb-8 md:w-3/4">
+        Driven by curiosity, growth, and passion—creating solutions, building connections, & discovering the world.
+      </h2>
+
+      {/* Supporting Description */}
+      <p className="text-lg md:text-2xl break-words md:w-2/3 font-extralight">
+        developer, polymath, adventurer, gastronome, aesthete, photographer, & audiophile  looking to sharpen and share my skills with humanity
+      </p>
+
+      {/* Carousel Section */}
+      <div className="mt-4">
+        <Carousel />
+      </div>
+
+      <div className="text-left">
+        <h1 className="text-3xl mt-4 mb-4 font-medium break-words">about</h1>
+      </div>
+      <div className="mb-12">
+        <div>
+          <ul className="space-y-4">
+            <li>
+              <span className="font-light break-words md:w-2/3">
+                I’m a Computer Science student at UCF aspiring to become a full-stack software engineer, driven by a passion for machine learning, AI, and investing. <br /><br />
+                I thrive on problem-solving, collaboration, and innovation, aiming to use technology to help others succeed. Dedicated to staying at the forefront of AI/ML advancements, I’m always eager to integrate these tools into my projects and grow as a developer. <br /><br />
+                Outside of tech, I enjoy cooking, traveling, rock climbing, exploring new places, photography, fashion, music, and meeting new people. Let’s connect to chat about tech, life, or exciting ideas!
+              </span>
+            </li>
+          </ul>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <div className="text-left">
+        <h1 className="text-3xl mt-4 mb-4 font-medium">work</h1>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div>
+          <ul className="space-y-4">
+            <li>
+              <a href="/stock" className="font-medium block underline">
+                stockBot
+              </a>
+              <span className="font-normal">a robust, adaptable tool for analyzing and predicting market movements</span>
+            </li>
+            <li>
+              <a href="/glance" className="font-medium block underline">
+                Glance
+              </a>
+              <span className="font-normal">your personal finance at a Glance</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul className="space-y-4">
+            <li>
+              <a href="/ceta" className="font-medium block underline">
+                ceta
+              </a>
+              <span className="font-normal">ml/ai research leveraging DARPA dataset for corporate entities</span>
+            </li>
+            <li>
+              <a href="/portfolio" className="font-medium block underline">
+                portfolio
+              </a>
+              <span className="font-normal">this website</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul className="space-y-4">
+            <li>
+              <a href="/meow" className="font-medium block underline">
+                meowBot
+              </a>
+              <span className="font-normal">interactive discord bot</span>
+            </li>
+            <li>
+              <a href="/cre" className="font-medium block underline">
+                cre underwriter
+              </a>
+              <span className="font-normal">underwriter for commercial real estate deals</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul className="space-y-4">
+            <li>
+              <a href="/personnel" className="font-medium block underline">
+                personnel management
+              </a>
+              <span className="font-normal">personnel manager and tracker</span>
+            </li>
+            <li>
+              <a href="/parking" className="font-medium block underline">
+                ucf parking
+              </a>
+              <span className="font-normal">find the ideal parking spot at ucf</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p className="flex flex-col items-center text-center py-6">if you know what you love, if you know what you are good at, if you know what you can be paid for, and if you know what the world needs, you have fulfilled the japanese reason for being.  <br/> <strong>--ikigai, 生きがい</strong></p>
     </div>
   );
 }
+
+
+// export default function Home() {
+//   return (
+//     <div className="font-manrope px-6 md:px-12 lg:px-24 py-36 lg:py-48">
+      
+//       <section className="font-medium text-2xl md:text-3xl lg:text-4xl mt-4 md:mt-8">
+//         Usman Khan
+//       </section>
+
+//       <section className="font-medium text-4xl md:text-5xl lg:text-6xl mt-8 md:mt-12">
+//       Learning, growing, solving problems—exploring the world, connecting with people, and creating through photography & fashion.
+//       </section>
+
+//       <section className="font-extrabold text-4xl md:text-5xl lg:text-6xl mt-4 md:mt-8">
+      
+//       </section>
+//     </div>
+//   );
+// }
+
+// Learning, growing, solving problems—exploring the world, connecting with people, and creating through photography and fashion.
+// Driven by curiosity, growth, and passion—creating solutions, building connections, and discovering life.
+// Committed to learning, growing, and solving meaningful problems—while exploring the world, connecting with people, and creating through photography and fashion.
+// Learning, growing, solving problems—exploring the world, & creating through photography and fashion.
+
+// <p className="flex flex-col items-center text-center py-6">“Patience is not sitting and waiting, it is foreseeing. It is looking at the thorn and seeing the rose, looking at the night and seeing the day. Lovers are patient and know that the moon needs time to become full.” <br/> -Rumi</p>
