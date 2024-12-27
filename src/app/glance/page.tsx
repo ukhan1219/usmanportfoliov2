@@ -63,7 +63,7 @@ export default function Glance() {
 
         {/* Accomplishments that we're proud of */}
         <h2 className="text-left text-2xl font-medium mb-2">
-          Accomplishments that we're proud of
+          Accomplishments that we&#39;re proud of
         </h2>
         <p className="text-left mb-8 font-light">
           We successfully incorporated multiple challenging APIs (including Polygon and Plaid), experienced very few merge
@@ -79,10 +79,10 @@ export default function Glance() {
         </p>
 
         {/* What's next for Glance */}
-        <h2 className="text-left text-2xl font-medium mb-2">What's next for Glance</h2>
+        <h2 className="text-left text-2xl font-medium mb-2">What&#39;s next for Glance</h2>
         <p className="text-left mb-8 font-light">
           We will continue working on Glance because we both have a passion for finance and making it more accessible.
-          We’re also deeply interested in ML/AI technologies. This project lets us demonstrate those interests and
+          We&#39;re also deeply interested in ML/AI technologies. This project lets us demonstrate those interests and
           skills. Expect new developments, expanded features, and broader operations in the near future.
         </p>
 

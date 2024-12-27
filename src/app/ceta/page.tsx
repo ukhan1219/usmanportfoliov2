@@ -29,7 +29,7 @@ export default function Ceta() {
             <h2 className="text-left text-2xl font-medium mb-2">Project Overview</h2>
             <p className="text-left mb-4 font-light">
               The cornerstone of my contribution is the development of a custom RandomForestRegressor model, designed to
-              predict how long a company is likely to last based on its attributes. I'm continually fine-tuning the
+              predict how long a company is likely to last based on its attributes. I&#39;m continually fine-tuning the
               model for improved accuracy and expanded capabilities.
             </p>
 

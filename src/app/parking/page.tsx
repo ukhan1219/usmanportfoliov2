@@ -41,7 +41,7 @@ export default function UCFParking() {
             the parking options based on where I am on campus.
           </li>
           <li>
-            <strong>Web Scraping</strong>: The project scrapes data from UCF's official parking website,
+            <strong>Web Scraping</strong>: The project scrapes data from UCF&#39;s official parking website,
             which provides up-to-date information on the number of available spots in each garage.
           </li>
         </ul>
@@ -51,10 +51,10 @@ export default function UCFParking() {
         <ol className="list-decimal text-left ml-8 mb-8 font-light">
           <li>
             <strong>Location Tracking</strong>: Using the Life360 API, the project tracks my current
-            location on or near UCF's campus.
+            location on or near UCF&#39;s campus.
           </li>
           <li>
-            <strong>Data Scraping</strong>: The system scrapes the latest parking data from UCF's website,
+            <strong>Data Scraping</strong>: The system scrapes the latest parking data from UCF&#39;s website,
             which lists available spots in each campus garage.
           </li>
           <li>
@@ -86,7 +86,7 @@ export default function UCFParking() {
           <li>Set up your Twilio and Life360 API keys in the configuration file.</li>
           <li>Run the scripts to begin tracking your location and receiving parking updates.</li>
           <li>
-            You’ll receive a text message with the best parking options every time you’re near
+            You&#39;ll receive a text message with the best parking options every time you&#39;re near
             campus.
           </li>
         </ol>
@@ -103,7 +103,7 @@ export default function UCFParking() {
         {/* Contributing */}
         <h2 className="text-left text-2xl font-medium mb-2">Contributing</h2>
         <p className="text-left mb-8 font-light">
-          Given the evolving nature of UCF's parking situation and potential updates to their website,
+          Given the evolving nature of UCF&#39;s parking situation and potential updates to their website,
           contributions are welcome to keep this tool effective. Feel free to reach out for
           improvements and advancements.
         </p>
