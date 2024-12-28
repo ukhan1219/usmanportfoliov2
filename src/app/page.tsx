@@ -32,19 +32,19 @@ export default function Home() {
           <ul className="space-y-4">
             <li>
               <span className="font-light break-words md:w-2/3">
-                I’m a Computer Science student at UCF aspiring to become a
+                i’m a computer science student at UCF aspiring to become a
                 full-stack software engineer, driven by a passion for machine
                 learning, AI, and investing. <br />
                 <br />
-                I thrive on problem-solving, collaboration, and innovation,
+                i thrive on problem-solving, collaboration, and innovation,
                 aiming to use technology to help others succeed. Dedicated to
-                staying at the forefront of AI/ML advancements, I’m always eager
+                staying at the forefront of AI/ML advancements, i’m always eager
                 to integrate these tools into my projects and grow as a
                 developer. <br />
                 <br />
-                Outside of tech, I enjoy cooking, traveling, rock climbing,
+                outside of tech, i enjoy cooking, traveling, rock climbing,
                 exploring new places, photography, fashion, music, and meeting
-                new people. Let’s connect to chat about tech, life, or exciting
+                new people. let’s connect to chat about tech, life, or exciting
                 ideas!
               </span>
             </li>
@@ -58,12 +58,11 @@ export default function Home() {
         <div>
           <ul className="space-y-4">
             <li>
-              <a href="/stock" className="font-medium block ">
-                stockBot{">"}
+              <a href="/fit" className="font-medium block ">
+                fit{">"}
               </a>
               <span className="font-extralight">
-                a robust, adaptable tool for analyzing and predicting market
-                movements
+                personal fitness journal and progress tracker
               </span>
             </li>
             <li>
@@ -79,6 +78,15 @@ export default function Home() {
         <div>
           <ul className="space-y-4">
             <li>
+              <a href="/stock" className="font-medium block ">
+                stockBot{">"}
+              </a>
+              <span className="font-extralight">
+                a robust, adaptable tool for analyzing and predicting market
+                movements
+              </span>
+            </li>
+            <li>
               <a href="/ceta" className="font-medium block ">
                 ceta{">"}
               </a>
@@ -86,22 +94,26 @@ export default function Home() {
                 ml/ai research leveraging DARPA dataset for corporate entities
               </span>
             </li>
+          </ul>
+        </div>
+        <div>
+          <ul className="space-y-4">
             <li>
               <a href="/portfolio" className="font-medium block ">
                 portfolio{">"}
               </a>
               <span className="font-extralight">this website</span>
             </li>
-          </ul>
-        </div>
-        <div>
-          <ul className="space-y-4">
             <li>
               <a href="/meow" className="font-medium block ">
                 meowBot{">"}
               </a>
               <span className="font-extralight">interactive discord bot</span>
             </li>
+          </ul>
+        </div>
+        <div>
+          <ul className="space-y-4">
             <li>
               <a href="/cre" className="font-medium block ">
                 cre underwriter{">"}
@@ -110,24 +122,12 @@ export default function Home() {
                 underwriter for commercial real estate deals
               </span>
             </li>
-          </ul>
-        </div>
-        <div>
-          <ul className="space-y-4">
             <li>
               <a href="/personnel" className="font-medium block ">
                 personnel management{">"}
               </a>
               <span className="font-extralight">
                 personnel manager and tracker
-              </span>
-            </li>
-            <li>
-              <a href="/parking" className="font-medium block ">
-                ucf parking{">"}
-              </a>
-              <span className="font-extralight">
-                find the ideal parking spot at ucf
               </span>
             </li>
           </ul>
@@ -143,24 +143,8 @@ export default function Home() {
   );
 }
 
-// export default function Home() {
-//   return (
-//     <div className="font-manrope px-6 md:px-12 lg:px-24 py-36 lg:py-48">
 
-//       <section className="font-medium text-2xl md:text-3xl lg:text-4xl mt-4 md:mt-8">
-//         Usman Khan
-//       </section>
 
-//       <section className="font-medium text-4xl md:text-5xl lg:text-6xl mt-8 md:mt-12">
-//       Learning, growing, solving problems—exploring the world, connecting with people, and creating through photography & fashion.
-//       </section>
-
-//       <section className="font-extrabold text-4xl md:text-5xl lg:text-6xl mt-4 md:mt-8">
-
-//       </section>
-//     </div>
-//   );
-// }
 
 // Learning, growing, solving problems—exploring the world, connecting with people, and creating through photography and fashion.
 // Driven by curiosity, growth, and passion—creating solutions, building connections, and discovering life.
