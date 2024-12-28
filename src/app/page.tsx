@@ -13,6 +13,7 @@ export default function Home() {
         connections, & discovering the world.
       </h2>
 
+
       {/* Supporting Description */}
       <p className="text-lg md:text-2xl break-words md:w-2/3 font-extralight">
         developer, polymath, adventurer, gastronome, aesthete, photographer, &
