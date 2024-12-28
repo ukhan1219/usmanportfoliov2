@@ -131,6 +131,7 @@ const programming = [
   "python",
   "ocaml",
   "java",
+  "cpp",
   "javascript",
   "typescript",
   "html",
