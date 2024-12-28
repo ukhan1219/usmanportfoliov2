@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="md:text-center md:w-1/3 mx-auto mb-8">
         <h1 className="text-left text-7xl font-medium mb-4">contact</h1>
         <p className="mb-8 text-left text-md font-extralight">
-          i am always looking for new connections and people to talk to
+          i am always looking for connections and people to talk to
         </p>
 
         <div className="flex items-center text-left md:break-words mb-12 mt-12">
