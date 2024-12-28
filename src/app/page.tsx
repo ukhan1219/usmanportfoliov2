@@ -8,7 +8,7 @@ export default function Home() {
       </h1>
 
       {/* One-Liner Section */}
-      <h2 className="text-3xl font-medium md:text-7xl break-words mb-6 md:mb-8 md:w-3/4">
+      <h2 className="text-3xl font-medium md:text-5xl lg:text-7xl break-words mb-6 md:mb-8 md:w-3/4">
         Driven by curiosity, growth, and passion—creating solutions, building
         connections, & discovering the world.
       </h2>
