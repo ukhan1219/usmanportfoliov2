@@ -5,7 +5,7 @@ import DarkMode from "../../../public/dark_mode_24dp_0C0C0C_FILL0_wght400_GRAD0_
 import LightMode from "../../../public/light_mode_24dp_F5F5F5_FILL0_wght400_GRAD0_opsz24.png";
 
 export default function DarkModeToggle() {
-  const [theme, setTheme] = useState<"dark" | "light">("light");
+  const [theme, setTheme] = useState<"dark" | "light">("dark");
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme") as
