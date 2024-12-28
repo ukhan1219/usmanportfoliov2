@@ -21,12 +21,12 @@ export default function Home() {
       </p>
 
       {/* Carousel Section */}
-      <div className="mt-4">
+      <div className="mt-12">
         <Carousel />
       </div>
 
       <div className="text-left">
-        <h1 className="text-3xl mt-4 mb-4 font-medium break-words">about</h1>
+        <h1 className="text-3xl mt-12 mb-4 font-medium break-words">about</h1>
       </div>
       <div className="mb-12">
         <div>
