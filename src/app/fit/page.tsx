@@ -5,7 +5,12 @@ export default function Fit() {
     <div className="md:text-center px-6 md:px-20 text-left mb-12 md:mb-24 py-24 lg:py-48">
       <div className="content md:w-1/3 mx-auto mb-8">
         <h1 className="text-left text-3xl font-medium md:text-7xl mb-4">
-          <a href="https://github.com/ukhan1219/poosdlarge">Fit{">"}</a>
+          <a
+            href="https://github.com/ukhan1219/poosdlarge"
+            className="hoverlink"
+          >
+            Fit{">"}
+          </a>
         </h1>
         <p className="text-left mb-8 text-sm font-extralight">
           <strong>Updated:</strong> December 27, 2024
@@ -15,8 +20,8 @@ export default function Fit() {
         <h2 className="text-left text-2xl font-medium mb-2">Inspiration</h2>
         <p className="text-left mb-4 font-light">
           We created Fit out of a desire to simplify and gamify our personal
-          fitness goals. Keeping track of workouts, nutrition, and progress
-          can be cumbersome; Fit streamlines these tasks into a single,
+          fitness goals. Keeping track of workouts, nutrition, and progress can
+          be cumbersome; Fit streamlines these tasks into a single,
           user-friendly interface.
         </p>
 
@@ -25,9 +30,9 @@ export default function Fit() {
         <p className="text-left mb-4 font-light">
           Fit is a fitness tracker and journaling application. Users can log
           their daily workouts, track their health stats (BMI, weight, height),
-          and monitor progress over time. By aggregating this data in one
-          place, Fit helps users stay organized and motivated to reach their
-          fitness goals.
+          and monitor progress over time. By aggregating this data in one place,
+          Fit helps users stay organized and motivated to reach their fitness
+          goals.
         </p>
 
         {/* How we built it */}
@@ -63,10 +68,9 @@ export default function Fit() {
         </h2>
         <p className="text-left mb-8 font-light">
           Integrating a robust user authentication system was a key challenge,
-          especially balancing security (password hashing, secure data
-          handling) and ease of use. Additionally, ensuring our date-based
-          workout logging worked seamlessly across timezones took a bit of fine
-          tuning.
+          especially balancing security (password hashing, secure data handling)
+          and ease of use. Additionally, ensuring our date-based workout logging
+          worked seamlessly across timezones took a bit of fine tuning.
         </p>
 
         {/* Accomplishments */}
@@ -113,7 +117,7 @@ export default function Fit() {
             <code>cd fit</code>
           </li>
           <li>
-            <code>npm install</code> 
+            <code>npm install</code>
           </li>
           <li>
             <code>npm run start</code>

@@ -43,13 +43,13 @@ const NavBar = () => {
       const now = new Date();
 
       const date = `${String(now.getDate()).padStart(2, "0")} ${String(
-        now.getMonth() + 1
+        now.getMonth() + 1,
       ).padStart(2, "0")} ${now.getFullYear()}`;
 
       const time = `${String(now.getHours()).padStart(2, "0")}:${String(
-        now.getMinutes()
+        now.getMinutes(),
       ).padStart(2, "0")}:${String(now.getSeconds()).padStart(2, "0")}:${String(
-        now.getMilliseconds()
+        now.getMilliseconds(),
       ).padStart(3, "0")}`;
 
       setDateTime({ date, time });
@@ -68,11 +68,9 @@ const NavBar = () => {
             {languages[currentLang].lang}
           </span>
         ) : (
-          <Link
-            href="/"
-            className="text-sm md:text-base lg:text-xl font-light"
-          >
-            {"<"}home
+          <Link href="/" className="text-sm md:text-base lg:text-xl font-light">
+            <span className="hoverlink">{"<"}home</span>
+            {/* {"<"}home */}
           </Link>
         )}
         <span
@@ -87,18 +85,16 @@ const NavBar = () => {
           href="/USMAN_KHAN_RESUME.pdf"
           className="text-sm md:text-base lg:text-lg font-light px-4"
         >
-          resume{">"}
+          <span className="hoverlink">resume{">"}</span>
         </Link>
 
         {pathname === "/contact" ? null : (
-
           <Link
             href="/contact"
-            className="text-sm md:text-base lg:text-lg font-light"
+            className="text-sm md:text-base lg:text-lg font-light hoverlink"
           >
             contact{">"}
           </Link>
-
         )}
       </div>
     </div>

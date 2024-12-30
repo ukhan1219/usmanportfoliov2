@@ -16,7 +16,7 @@ const Contact = () => {
             href="https://github.com/ukhan1219"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-light text-lg"
+            className="font-light text-lg hoverlink"
           >
             github{">"}
           </a>
@@ -24,7 +24,10 @@ const Contact = () => {
 
         <div className="flex items-center text-left md:break-words mb-12">
           <Mail size={24} className="mr-4" />
-          <a href="mailto:usman@usmankhan.dev" className="font-light text-lg">
+          <a
+            href="mailto:usman@usmankhan.dev"
+            className="font-light text-lg hoverlink"
+          >
             email{">"}
           </a>
         </div>
@@ -35,7 +38,7 @@ const Contact = () => {
             href="https://linkedin.com/in/khanu/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-light text-lg"
+            className="font-light text-lg hoverlink"
           >
             linkedin{">"}
           </a>

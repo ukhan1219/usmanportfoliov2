@@ -7,7 +7,9 @@ export default function Glance() {
     <div className="md:text-center px-6 md:px-20 text-left mb-12 md:mb-24 py-24 lg:py-48">
       <div className="content md:w-1/3 mx-auto mb-8">
         <h1 className="text-left text-3xl font-medium md:text-7xl mb-4">
-          <a href="https://github.com/ukhan1219/glance">Glance{">"}</a>
+          <a href="https://github.com/ukhan1219/glance" className="hoverlink">
+            Glance{">"}
+          </a>
         </h1>
         <p className="text-left mb-8 text-sm font-extralight">
           <strong>Updated:</strong> October 4, 2024

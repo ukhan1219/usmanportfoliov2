@@ -13,7 +13,6 @@ export default function Home() {
         connections, & discovering the world.
       </h2>
 
-
       {/* Supporting Description */}
       <p className="text-lg md:text-2xl break-words md:w-2/3 font-extralight">
         developer, polymath, adventurer, gastronome, aesthete, photographer, &
@@ -59,18 +58,18 @@ export default function Home() {
         <div>
           <ul className="space-y-4">
             <li>
-              <a href="/fit" className="font-medium block ">
+              <a href="/fit" className="font-medium block hoverlink">
                 fit{">"}
               </a>
-              <span className="font-extralight">
+              <span className="font-extralight block">
                 personal fitness journal and progress tracker
               </span>
             </li>
             <li>
-              <a href="/glance" className="font-medium block ">
+              <a href="/glance" className="font-medium block hoverlink">
                 glance{">"}
               </a>
-              <span className="font-extralight">
+              <span className="font-extralight block">
                 your personal finance at a glance
               </span>
             </li>
@@ -79,19 +78,19 @@ export default function Home() {
         <div>
           <ul className="space-y-4">
             <li>
-              <a href="/stock" className="font-medium block ">
+              <a href="/stock" className="font-medium block hoverlink">
                 stockBot{">"}
               </a>
-              <span className="font-extralight">
+              <span className="font-extralight block">
                 a robust, adaptable tool for analyzing and predicting market
                 movements
               </span>
             </li>
             <li>
-              <a href="/ceta" className="font-medium block ">
+              <a href="/ceta" className="font-medium block hoverlink">
                 ceta{">"}
               </a>
-              <span className="font-extralight">
+              <span className="font-extralight block">
                 ml/ai research leveraging DARPA dataset for corporate entities
               </span>
             </li>
@@ -100,34 +99,36 @@ export default function Home() {
         <div>
           <ul className="space-y-4">
             <li>
-              <a href="/portfolio" className="font-medium block ">
+              <a href="/portfolio" className="font-medium block hoverlink">
                 portfolio{">"}
               </a>
-              <span className="font-extralight">this website</span>
+              <span className="font-extralight block">this website</span>
             </li>
             <li>
-              <a href="/meow" className="font-medium block ">
+              <a href="/meow" className="font-medium block hoverlink">
                 meowBot{">"}
               </a>
-              <span className="font-extralight">interactive discord bot</span>
+              <span className="font-extralight block">
+                interactive discord bot
+              </span>
             </li>
           </ul>
         </div>
         <div>
           <ul className="space-y-4">
             <li>
-              <a href="/cre" className="font-medium block ">
+              <a href="/cre" className="font-medium block hoverlink">
                 cre underwriter{">"}
               </a>
-              <span className="font-extralight">
+              <span className="font-extralight block">
                 underwriter for commercial real estate deals
               </span>
             </li>
             <li>
-              <a href="/personnel" className="font-medium block ">
+              <a href="/personnel" className="font-medium block hoverlink">
                 personnel management{">"}
               </a>
-              <span className="font-extralight">
+              <span className="font-extralight block">
                 personnel manager and tracker
               </span>
             </li>
@@ -143,9 +144,6 @@ export default function Home() {
     </div>
   );
 }
-
-
-
 
 // Learning, growing, solving problems—exploring the world, connecting with people, and creating through photography and fashion.
 // Driven by curiosity, growth, and passion—creating solutions, building connections, and discovering life.
