@@ -1,0 +1,15 @@
+{
+    "applinks": {
+        "details": [
+        {
+            "appIDs": ["6TD76WYRMG.com.glanceFinance.Glance"],
+            "components": [
+                {
+                    "/": "/plaid-oauth/*",
+                    "comment": "Matches Plaid OAuth redirects for Glance Finance app"
+                }
+            ]
+        }
+        ]
+    }
+}
