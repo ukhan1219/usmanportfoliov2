@@ -1,106 +1,157 @@
-// glance.tsx
-
 import React from "react";
+import Image from "next/image";
 
 export default function Glance() {
   return (
     <div className="md:text-center px-6 md:px-20 text-left mb-12 md:mb-24 py-24 lg:py-48">
-      <div className="content md:w-1/3 mx-auto mb-8">
+      <div className="content md:w-2/3 mx-auto mb-8">
         <h1 className="text-left text-3xl font-medium md:text-7xl mb-4">
-          <a href="https://github.com/ukhan1219/glance" className="hoverlink">
+          <a
+            href="https://github.com/ukhan1219/personal-finance"
+            className="hoverlink"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Glance{">"}
           </a>
         </h1>
         <p className="text-left mb-8 text-sm font-extralight">
-          <strong>Updated:</strong> October 4, 2024
+          <strong>Updated:</strong> July 22, 2024
         </p>
 
-        <h2 className="text-left text-2xl font-medium mb-2">Inspiration</h2>
         <p className="text-left mb-4 font-light">
-          A love for finance, machine learning and AI
+          Glance is a beautifully simple iOS application designed to give you an
+          at-a-glance overview of your daily, weekly, and monthly spending. By
+          securely connecting to your bank accounts, it provides a clean,
+          minimalist interface focused on one thing: clarity in your personal
+          finances. This project spans the full stack, from a native SwiftUI
+          front end to a powerful Go backend, all tied together with modern
+
+          cloud services.
         </p>
 
-        <h2 className="text-left text-2xl font-medium mb-2">What it does</h2>
-        <p className="text-left mb-4 font-light">
-          Glance allows you to have multiple financial accounts in the same
-          place to avoid the redundancy of checking multiple platforms. It also
-          provides market information and curated AI insights based on your
-          spending habits and investments.
-        </p>
-
-        <h2 className="text-left text-2xl font-medium mb-2">How we built it</h2>
-        <p className="text-left mb-4 font-light">
-          We built it using the T3 stack which incorporates:
-        </p>
-        <ul className="list-disc text-left ml-8 mb-4 font-light">
-          <li>TypeScript</li>
-          <li>Tailwind CSS</li>
-          <li>TRPC</li>
-        </ul>
-        <p className="text-left mb-4 font-light">
-          We used other technologies such as:
-        </p>
-        <ul className="list-disc text-left ml-8 mb-8 font-light">
-          <li>Next.js</li>
-          <li>React.js</li>
-          <li>Node.js</li>
-          <li>Prisma</li>
-          <li>Heroku</li>
-          <li>Figma</li>
-          <li>GitHub</li>
-          <li>Plaid API</li>
-          <li>Gemini AI</li>
-          <li>Polygon</li>
-        </ul>
+        <h2 className="text-left text-2xl font-medium mb-2">Demo</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+          <Image
+            src="/IMG_3952.PNG"
+            alt="Login Screen"
+            width={400}
+            height={800}
+            className="rounded-lg"
+          />
+          <Image
+            src="/IMG_3951.PNG"
+            alt="Spending Dashboard"
+            width={400}
+            height={800}
+            className="rounded-lg"
+          />
+          <div className="md:col-span-2">
+            <Image
+              src="/IMG_3954.PNG"
+              alt="Account Linking"
+              width={400}
+              height={800}
+              className="rounded-lg mx-auto"
+            />
+          </div>
+        </div>
 
         <h2 className="text-left text-2xl font-medium mb-2">
-          Challenges we ran into
+          Project Purpose
         </h2>
-        <p className="text-left mb-8 font-light">
-          Challenges we ran into included attempting to use crypto APIs such as
-          Binance, Coinbase, and Robinhood, which proved unfeasible given
-          project scope (cost, time constraints, and the need for a registered
-          business).
-        </p>
-
-        <h2 className="text-left text-2xl font-medium mb-2">
-          Accomplishments that we&#39;re proud of
-        </h2>
-        <p className="text-left mb-8 font-light">
-          We successfully incorporated multiple challenging APIs (including
-          Polygon and Plaid), experienced very few merge conflicts, securely
-          implemented OAuth for user logins, and employed a modern stack (T3)
-          despite no prior experience on our team.
-        </p>
-
-        <h2 className="text-left text-2xl font-medium mb-2">What we learned</h2>
-        <p className="text-left mb-8 font-light">
-          We learned how powerful frameworks can be for rapidly developing
-          applications from scratch, how to route APIs, and that integrating
-          certain APIs can be much harder than others.
+        <p className="text-left mb-4 font-light">
+          Glance started as a hackathon project and has since evolved into
+          a passion project and a powerful portfolio piece. The primary
+          motivation was twofold: to build a real-world application that my
+          friends and I could use, and to master new technologies like SwiftUI
+          and Go. Glance showcases a full-stack skill set, from thoughtful
+          UI/UX design on the frontend to secure, performant API development on
+          the backend.
         </p>
 
         <h2 className="text-left text-2xl font-medium mb-2">
-          What&#39;s next for Glance
+          How It Works: The Full-Stack Architecture
         </h2>
-        <p className="text-left mb-8 font-light">
-          We will continue working on Glance because we both have a passion for
-          finance and making it more accessible. We&#39;re also deeply
-          interested in ML/AI technologies. This project lets us demonstrate
-          those interests and skills. Expect new developments, expanded
-          features, and broader operations in the near future.
+        <p className="text-left mb-4 font-light">
+          Glance is built on a modern, decoupled architecture, ensuring
+          security, scalability, and maintainability.
         </p>
 
-        <h2 className="text-left text-2xl font-medium mb-2">How to run:</h2>
-        <ul className="list-disc text-left ml-8 mb-8 font-light">
+        <h3 className="text-left text-xl font-medium mb-2">
+          1. iOS Application (Frontend)
+        </h3>
+        <p className="text-left mb-4 font-light">
+          The user-facing component is a native iOS app built entirely with
+          SwiftUI. It uses Firebase Authentication for secure sign-in, the Plaid
+          Link iOS SDK for connecting financial institutions, and communicates
+          with the backend over a secure REST API.
+        </p>
+
+        <h3 className="text-left text-xl font-medium mb-2">
+          2. Go Backend (API)
+        </h3>
+        <p className="text-left mb-4 font-light">
+          A high-performance server written in Go, using the Gin web framework.
+          It exposes REST API endpoints, verifies Firebase ID tokens to
+          authenticate users, and securely communicates with the Plaid API to
+          fetch and process transaction data.
+        </p>
+
+        <h3 className="text-left text-xl font-medium mb-2">
+          3. Firebase & Plaid (Backend Services)
+        </h3>
+        <p className="text-left mb-4 font-light">
+          Firebase Authentication acts as the identity provider, while Firestore
+          is used to store user data and encrypted Plaid access tokens. Plaid
+          acts as the secure bridge to financial institutions.
+        </p>
+
+        <h2 className="text-left text-2xl font-medium mb-2">Technology Stack</h2>
+        <ul className="list-disc text-left ml-8 mb-4 font-light space-y-2">
           <li>
-            <code>npm install</code>
+            <strong>iOS Application:</strong> Swift 5, SwiftUI, Plaid Link iOS
+            SDK, Firebase SDK (Auth, Firestore), LocalAuthentication.
           </li>
           <li>
-            <code>npm run db:push</code>
+            <strong>Backend Server:</strong> Go (Golang), Gin Web Framework,
+            Plaid Go Client, Firebase Admin Go SDK.
           </li>
           <li>
-            <code>npm run dev</code>
+            <strong>Cloud & Database:</strong> Firebase Authentication,
+            Firestore (NoSQL), Firebase Cloud Functions (TypeScript).
+          </li>
+        </ul>
+
+        <h2 className="text-left text-2xl font-medium mb-2">
+          Accomplishments & Learnings
+        </h2>
+        <ul className="list-disc text-left ml-8 mb-4 font-light space-y-2">
+          <li>
+            Successfully built and deployed a full-stack application from
+            scratch using a new tech stack (Go and SwiftUI).
+          </li>
+          <li>
+            Architected a secure and robust authentication and data flow,
+            following best practices.
+          </li>
+          <li>
+            Learned the intricacies of the Plaid API and the complexities of
+            managing financial data integrations securely.
+          </li>
+        </ul>
+
+        <h2 className="text-left text-2xl font-medium mb-2">Future Work</h2>
+        <ul className="list-disc text-left ml-8 mb-4 font-light space-y-2">
+          <li>
+            Optimize backend calculations and database queries for performance.
+          </li>
+          <li>
+            Enhance UI/UX with more detailed transaction views and date range
+            filtering.
+          </li>
+          <li>
+            Explore new features like budget setting and subscription tracking.
           </li>
         </ul>
       </div>

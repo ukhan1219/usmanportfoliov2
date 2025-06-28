@@ -54,85 +54,73 @@ export default function Home() {
       <div className="text-left">
         <h1 className="text-3xl mt-4 mb-4 font-medium">work</h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-        <div>
-          <ul className="space-y-4">
-            <li>
-              <a href="/fit" className="font-medium block hoverlink">
-                fit{">"}
-              </a>
-              <span className="font-extralight block">
-                personal fitness journal and progress tracker
-              </span>
-            </li>
-            <li>
-              <a href="/glance" className="font-medium block hoverlink">
-                glance{">"}
-              </a>
-              <span className="font-extralight block">
-                your personal finance at a glance
-              </span>
-            </li>
-          </ul>
+      <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-8 mb-12">
+        {/* -- Column 1 -- */}
+        <div className="md:col-start-1 md:row-start-1">
+          <a href="/mantle" className="font-medium block hoverlink">
+            mantle{">"}
+          </a>
+          <span className="font-extralight block">
+            locally hosted 8b parameter llm on ios
+          </span>
         </div>
-        <div>
-          <ul className="space-y-4">
-            <li>
-              <a href="/stock" className="font-medium block hoverlink">
-                stockBot{">"}
-              </a>
-              <span className="font-extralight block">
-                a robust, adaptable tool for analyzing and predicting market
-                movements
-              </span>
-            </li>
-            <li>
-              <a href="/ceta" className="font-medium block hoverlink">
-                ceta{">"}
-              </a>
-              <span className="font-extralight block">
-                ml/ai research leveraging DARPA dataset for corporate entities
-              </span>
-            </li>
-          </ul>
+        <div className="md:col-start-1 md:row-start-2">
+          <a href="/glance" className="font-medium block hoverlink">
+            glance{">"}
+          </a>
+          <span className="font-extralight block">
+            your personal finance at a glance
+          </span>
         </div>
-        <div>
-          <ul className="space-y-4">
-            <li>
-              <a href="/portfolio" className="font-medium block hoverlink">
-                portfolio{">"}
-              </a>
-              <span className="font-extralight block">this website</span>
-            </li>
-            <li>
-              <a href="/meow" className="font-medium block hoverlink">
-                meowBot{">"}
-              </a>
-              <span className="font-extralight block">
-                interactive discord bot
-              </span>
-            </li>
-          </ul>
+        {/* -- Column 2 -- */}
+        <div className="md:col-start-2 md:row-start-1">
+          <a href="/mend" className="font-medium block hoverlink">
+            mend{">"}
+          </a>
+          <span className="font-extralight block">
+            ai powered journaling for mental health
+          </span>
         </div>
-        <div>
-          <ul className="space-y-4">
-            <li>
-              <a href="/cre" className="font-medium block hoverlink">
-                cre underwriter{">"}
-              </a>
-              <span className="font-extralight block">
-                underwriter for commercial real estate deals
-              </span>
-            </li>
-            <li>
-              <a href="/personnel" className="font-medium block hoverlink">
-                personnel management{">"}
-              </a>
-              <span className="font-extralight block">
-                personnel manager and tracker
-              </span>
-            </li>
-          </ul>
+        <div className="md:col-start-2 md:row-start-2">
+          <a href="/fit" className="font-medium block hoverlink">
+            fit{">"}
+          </a>
+          <span className="font-extralight block">
+            personal fitness journal and progress tracker
+          </span>
+        </div>
+        {/* -- Column 3 -- */}
+        <div className="md:col-start-3 md:row-start-1">
+          <a href="/stock" className="font-medium block hoverlink">
+            stockBot{">"}
+          </a>
+          <span className="font-extralight block">
+            a robust, adaptable tool for analyzing and predicting market
+            movements
+          </span>
+        </div>
+        <div className="md:col-start-3 md:row-start-2">
+          <a href="/ceta" className="font-medium block hoverlink">
+            ceta{">"}
+          </a>
+          <span className="font-extralight block">
+            ml/ai research leveraging DARPA dataset for corporate entities
+          </span>
+        </div>
+        {/* -- Column 4 -- */}
+        <div className="md:col-start-4 md:row-start-1">
+          <a href="/portfolio" className="font-medium block hoverlink">
+            portfolio{">"}
+          </a>
+          <span className="font-extralight block">this website</span>
+        </div>
+        <div className="md:col-start-4 md:row-start-2">
+          <a href="/meow" className="font-medium block hoverlink">
+            meowBot{">"}
+          </a>
+          <span className="font-extralight block">
+            interactive discord bot
+          </span>
         </div>
       </div>
       <p className="flex flex-col items-center text-center py-6">
