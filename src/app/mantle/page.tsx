@@ -61,11 +61,11 @@ export default function Mantle() {
           1. Model Conversion & Compression
         </h3>
         <p className="text-left mb-4 font-light">
-          The first step is to convert a pre-trained model into Apple's Core ML
+          The first step is to convert a pre-trained model into Apple&apos;s Core ML
           format. This project uses <code>meta-llama/Llama-3.2-3B</code>. To
           shrink the model, we apply aggressive quantization, converting the
-          model's weights from 16-bit floating-point numbers to smaller types
-          like 8-bit integers, which drastically reduces the model's size and
+          model&apos;s weights from 16-bit floating-point numbers to smaller types
+          like 8-bit integers, which drastically reduces the model&apos;s size and
           memory usage.
         </p>
 
@@ -95,10 +95,10 @@ export default function Mantle() {
         </h3>
         <p className="text-left mb-4 font-light">
           When profiling shows a layer is a bottleneck, we can replace Core
-          ML's default implementation with our own highly optimized version
-          using Metal, Apple's low-level GPU programming framework. This
+          ML&apos;s default implementation with our own highly optimized version
+          using Metal, Apple&apos;s low-level GPU programming framework. This
           involves writing custom layers in Swift and integrating them using
-          Core ML's <code>MLCustomLayer</code> protocol.
+          Core ML&apos;s <code>MLCustomLayer</code> protocol.
         </p>
 
         <h2 className="text-left text-2xl font-medium mb-2">Technology Stack</h2>

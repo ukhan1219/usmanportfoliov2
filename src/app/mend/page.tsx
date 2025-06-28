@@ -80,7 +80,7 @@ export default function Mend() {
         </h3>
         <p className="text-left mb-4 font-light">
         A NoSQL database hosted on Atlas,
-            serving as the application's data store for user profiles and
+            serving as the application&apos;s data store for user profiles and
             journal entries.
         </p>
 
@@ -127,7 +127,7 @@ export default function Mend() {
         <ul className="list-disc text-left ml-8 mb-4 font-light space-y-2">
           <li>
           A key feature planned for a future release is an overall tone
-          analysis, which will display a color-coded indicator on the user's
+          analysis, which will display a color-coded indicator on the user&apos;s
           dashboard to give them an at-a-glance impression of their emotional
           state over time.
           </li>

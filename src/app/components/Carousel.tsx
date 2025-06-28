@@ -129,11 +129,13 @@ import "./Carousel.css";
 const programming = [
   "c",
   "python",
-  "ocaml",
-  "java",
   "cpp",
-  "javascript",
+  "swift",
+  "go",
   "typescript",
+  "java",
+  "ocaml",
+  "javascript",
   "html",
   "css",
   "php",
@@ -141,6 +143,9 @@ const programming = [
   "r",
   "mysql",
   "sqlite",
+  "mongodb",
+  "postgres",
+  "bash",
 ];
 
 const frameworks = [
@@ -151,7 +156,10 @@ const frameworks = [
   "nodejs",
   "react",
   "nextjs",
+  "nodejs",
+  "express",
   "prisma",
+  "bots",
 ];
 
 const tools = [
@@ -165,6 +173,12 @@ const tools = [
   "docker",
   "vercel",
   "vscode",
+  "latex",
+  "cloudflare",
+  "firebase",
+  "postman",
+
+
 ];
 
 export default function SkillsMarquee() {
