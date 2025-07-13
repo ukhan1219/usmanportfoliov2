@@ -14,7 +14,7 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        manrope: ["Manrope", "sans-serif"],
+        sans: ["var(--font-manrope)", "sans-serif"],
       },
     },
   },

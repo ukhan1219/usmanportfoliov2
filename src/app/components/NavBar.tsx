@@ -83,6 +83,7 @@ const NavBar = () => {
       <div className="navbar-end">
         <Link
           href="/USMAN_KHAN_RESUME.pdf"
+          prefetch={false}
           className="text-sm md:text-base lg:text-lg font-light px-4"
         >
           <span className="hoverlink">resume{">"}</span>

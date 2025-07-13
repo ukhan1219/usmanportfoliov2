@@ -2,7 +2,14 @@ import DarkModeToggle from "./components/DarkModeToggle";
 import NavBar from "./components/NavBar";
 
 import type { Metadata } from "next";
+import { Manrope } from "next/font/google";
 import "./globals.css";
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-manrope",
+});
 
 export const metadata: Metadata = {
   title: "Usman Khan",
@@ -39,11 +46,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={manrope.variable}>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body className="font-manrope antialiased">
+      <body className="antialiased">
         <NavBar />
         {children}
         <DarkModeToggle />
